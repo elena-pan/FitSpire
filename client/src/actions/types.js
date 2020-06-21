@@ -1,0 +1,29 @@
+// Errors
+export const GET_ERRORS = "GET_ERRORS";
+
+// Authentication
+export const USER_LOADING = "USER_LOADING";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+
+// Exercise logs
+export const ADD_EXERCISE = "ADD_EXERCISE";
+export const UPDATE_EXERCISE = "UPDATE_EXERCISE";
+export const DELETE_EXERCISE = "DELETE_EXERCISE";
+export const GET_EXERCISE = "GET_EXERCISE";
+export const EXERCISE_LOADING = "EXERCISE_LOADING";
+export const GET_EXERCISES = "GET_EXERCISES";
+export const EXERCISES_LOADING = "EXERCISES_LOADING";
+
+// User challenges
+export const NEW_USERCHALLENGE = "NEW_USERCHALLENGE";
+export const UPDATE_USERCHALLENGE = "UPDATE_USERCHALLENGE";
+export const DELETE_USERCHALLENGE = "DELETE_USERCHALLENGE";
+export const GET_USERCHALLENGES = "GET_USERCHALLENGES";
+export const USERCHALLENGES_LOADING = "USERCHALLENGES_LOADING";
+
+// Toast notifications
+export const ADD_TOAST = 'ADD_TOAST';
+
+// Password token
+export const PASSWORD_TOKEN_LOADING = "PASSWORD_TOKEN_LOADING";
+export const PASSWORD_TOKEN_VALID = "PASSWORD_TOKEN_VALID";
