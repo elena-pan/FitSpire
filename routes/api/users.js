@@ -225,7 +225,7 @@ router.get("/verify/:token", (req, res) => {
                         email: user.email
                     };
                     // Schedule new challenge in 1 hour
-                    scheduleNewUserChallenge(USER, new Date(new Date().setMinutes(new Date().getMinutes()+1)));
+                    scheduleNewUserChallenge(USER, new Date(new Date().setHours(new Date().getHours()+1)));
                     res.json({ success: true })
 
                 })
