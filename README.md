@@ -1,7 +1,7 @@
 # FitSpire
 Full-stack MERN application for exercise tracking and challenges
 
-
+![Demo Animation](https://user-images.githubusercontent.com/52430997/85240978-6ae66700-b3f7-11ea-9d26-52931087383b.gif)
 
 ## Technology Stack - MERN
 * MongoDB and Mongoose
