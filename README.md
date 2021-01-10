@@ -28,7 +28,7 @@ Full-stack MERN application for exercise tracking and challenges
 
 #### Challenges
 * Server sends fitness challenges
-* Next challenge is schedueled to be sent 1 day after the last one is completed
+* Next challenge is scheduled to be sent 1 day after the last one is completed
 
 #### General
 * Toast notifications
