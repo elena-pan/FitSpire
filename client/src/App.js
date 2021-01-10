@@ -7,6 +7,7 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 
 import Toasts from "./components/layout/Toasts";
+import ScrollToTop from "./components/layout/ScrollToTop";
 import Landing from "./components/layout/Landing";
 import Footer from "./components/layout/Footer";
 import About from "./components/layout/About";
@@ -59,6 +60,7 @@ function App() {
       <Router>
         <div className="App">
           <Navbar />
+          <ScrollToTop />
           <Toasts />
           <Switch>
             <Route exact path="/" component={Landing} />

@@ -1,5 +1,5 @@
 const express = require('express');
-//const cors = require('cors');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const passport = require("passport");
@@ -23,9 +23,7 @@ app.use(
     })
   );
 app.use(bodyParser.json());
-
-// Configure Express to also serve frontend
-app.use(express.static(path.join(__dirname, "client", "build")))
+app.use(cors());
 
 // DB Config
 const uri = process.env.MONGO_URI;
@@ -50,6 +48,7 @@ app.use("/api/contact", contact);
 //app.use("/api/challenges", challenges); // Only enable for database updates
 
 // Configure Express to also serve frontend
+app.use(express.static(path.join(__dirname, "client", "build")));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
