@@ -1,5 +1,5 @@
 # FitSpire
-Full-stack MERN application for exercise tracking and challenges
+Full-stack MERN application for exercise tracking and challenges.
 
 https://fitspire.herokuapp.com
 
