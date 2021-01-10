@@ -1,7 +1,7 @@
 # FitSpire
 Full-stack MERN application for exercise tracking and challenges
 
-https://chefpan.herokuapp.com
+https://fitspire.herokuapp.com
 
 The web app is hosted on Heroku's free tier, which sleeps after 30 minutes of inactivity. It may take 20-30 seconds on first load for the dyno to wake up.
 
