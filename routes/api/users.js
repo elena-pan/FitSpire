@@ -6,7 +6,8 @@ const passport = require("passport");
 const sgMail = require("@sendgrid/mail");
 const crypto = require("crypto");
 
-const host = "http://localhost:3000";
+require('dotenv').config();
+const host = process.env.HOST_URL;
 
 require('dotenv').config();
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
