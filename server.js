@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const passport = require("passport");
+const path = require("path");
 
 const users = require("./routes/api/users");
 const exercises = require("./routes/api/exercises");
@@ -22,6 +23,9 @@ app.use(
     })
   );
 app.use(bodyParser.json());
+
+// Configure Express to also serve frontend
+app.use(express.static(path.join(__dirname, "client", "build")))
 
 // DB Config
 const uri = process.env.MONGO_URI;
@@ -44,6 +48,11 @@ app.use("/api/user-challenges", userChallenges);
 app.use("/api/contact", contact);
 
 //app.use("/api/challenges", challenges); // Only enable for database updates
+
+// Configure Express to also serve frontend
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
