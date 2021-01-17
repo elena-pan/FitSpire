@@ -43,4 +43,3 @@ The web app is hosted on Heroku's free tier, which sleeps after 30 minutes of in
 * Achievements and badges
 * More stats
 * Competitions/social aspect
-* Deploy
