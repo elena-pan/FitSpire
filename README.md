@@ -12,7 +12,7 @@ The web app is hosted on Heroku's free tier, which sleeps after 30 minutes of in
 * Express.js
 * React.js - using Redux and React router, bootstrapped with Create React App
 * Node.js
-* Materialize as CSS framework
+* Materialize CSS framework
 
 ## Features
 
